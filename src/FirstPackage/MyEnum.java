@@ -1,9 +1,13 @@
 package FirstPackage;
 
 public enum MyEnum {
-	APPLE,
-	ORANGE,
-	BANANA;
+	APPLE  { int apply(){return 10;} },
+	ORANGE { int apply(){return 15;} },
+	BANANA { int apply(){return 20;} };
+	
+	// abstract method in enum
+	// 特定于常量的方法
+	abstract int apply();
 	
 	public static void main(String args[]) throws InstantiationException, IllegalAccessException {
 		// value
