@@ -29,5 +29,6 @@ public class SubTyping {
 		List<Object> lo = new ArrayList<>();
 		sints = lo; //OK. List<Object> is a sub-type of sints
 		
+		
 	}
 }
