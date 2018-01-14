@@ -5,7 +5,7 @@ import java.nio.charset.Charset;
 
 public class Basic {
 	public static void main(String[] args) {
-		String s = "你好hello world";
+		String s = "TestSerial";
 		byte[] bs = s.getBytes();
 		for(byte b : bs) {
 			out.print(b);
