@@ -13,7 +13,7 @@ public class InspectClassLoader {
 	
 	public void getResource(){
 		System.out.println("Class loader is " + loader);
-		System.out.println(System.getProperty("java.class.path"));
+		System.out.println("Class path is: "+ System.getProperty("java.class.path"));
 		URL res = loader.getResource("mysql-connector.jar");
 		System.out.println("Find resource url is " + res);
 		
@@ -35,6 +35,7 @@ public class InspectClassLoader {
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException{
 		InspectClassLoader ICL = new InspectClassLoader();
 		ICL.printSystemProperties();
-		ICL.loadClass("InsideJVM.InspectClassLoader");
+		ICL.getResource();
+		//ICL.loadClass("InsideJVM.InspectClassLoader");
 	}
 }
