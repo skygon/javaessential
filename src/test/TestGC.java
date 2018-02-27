@@ -2,6 +2,12 @@ package test;
 
 import java.util.concurrent.TimeUnit;
 
+/*
+ * Use the following config at vm setting to let gc log displayed:
+ * -XX:+PrintGCDetails
+ * -Xmx64m  --> total jvm memory 64 MB
+ * -Xmn16m  --> young generation 16MB
+ * */
 public class TestGC {
 	static public void main(String[] args){
 		int size = 1000000;
