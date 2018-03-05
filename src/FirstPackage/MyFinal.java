@@ -24,6 +24,7 @@ public class MyFinal {
 		y = 20;
 	}
 	
+	
 	public static void main(String[] args){
 		int x = MyFinal.z;
 		MyFinal f = new MyFinal();
